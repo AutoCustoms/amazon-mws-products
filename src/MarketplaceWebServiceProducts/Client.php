@@ -845,6 +845,8 @@ class MarketplaceWebServiceProducts_Client implements MarketplaceWebServiceProdu
     {
         if (PHP_VERSION_ID < 50600) {
             iconv_set_encoding('input_encoding', 'UTF-8');
+            iconv_set_encoding('input_encoding', 'UTF-8');
+            iconv_set_encoding('internal_encoding', 'UTF-8');
             iconv_set_encoding('output_encoding', 'UTF-8');
             iconv_set_encoding('internal_encoding', 'UTF-8');
         } else {
